@@ -27,3 +27,20 @@ let someNumber = '' // || // " "
 let stringNumber = Boolean(someNumber)
 console.log(stringNumber);
 console.log(typeof(stringNumber));
+
+// ----------------------------- * Operations * --------------------------------
+
+let value = 3
+
+let negValue = -value
+// console.log(negValue);
+
+let str1 = "hello"
+let str2 = " Prathamesh"
+
+let result = str1 + str2
+console.log(result);
+// or
+console.log("\n");
+
+console.log(str1 + str2);
