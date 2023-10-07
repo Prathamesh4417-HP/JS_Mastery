@@ -44,3 +44,31 @@ console.log(result);
 console.log("\n");
 
 console.log(str1 + str2);
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack Memory (Premetive) , Heap (Non-Premetive)
+
+
+let myName = "Prathamesh Sonawane"  // stored in stack
+
+let anotherName = myName     // get copy of myName variable
+
+anotherName = "Stricas"
+
+console.log("\n",myName);
+console.log("\n",anotherName);
+
+
+
+
+let userOne = {
+    email: "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne   // get direct reference from heap memory
+
+console.log(userOne.email);
+console.log(userTwo.email);
