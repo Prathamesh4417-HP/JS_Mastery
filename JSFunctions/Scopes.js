@@ -84,4 +84,41 @@ console.log(addTwo(5))
 //   console.log(mycar.make); // "Honda"
 //   myFunc(mycar);
 //   console.log(mycar.make); // "Toyota"
-  
+
+
+
+
+
+// Types of Scopes
+
+// Global scope: The default scope for all code running in script mode.
+// Module scope: The scope for code running in module mode.
+// Function scope: The scope created with a function.
+// In addition, variables declared with let or const can belong to an additional scope:
+
+// Block scope: The scope created with a pair of curly braces (a block).
+
+
+const x = "declared outside function";
+
+exampleFunction();
+
+function exampleFunction() {
+  console.log("Inside function");
+  console.log(x);
+}
+
+console.log("Outside function");
+console.log(x);
+
+
+function Car(type, fuelType){
+	this.type = type;
+	this.fuelType = fuelType;
+}
+
+function setBrand(brand){
+	Car.call(this, "convertible", "petrol");
+	this.brand = brand;
+	console.log(`Car details = `, this);
+}
